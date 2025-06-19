@@ -1,0 +1,9 @@
+package com.hardik;
+
+public class InsertProg {
+
+	public static void main(String[] args) throws Exception {
+		 
+		Class.forName("com.mysql.cj.jdbc.Drvier");
+	}
+}

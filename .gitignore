@@ -1,0 +1,33 @@
+# === Java ===
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Eclipse ===
+.project
+.classpath
+.settings/
+bin/
+
+# === VSCode ===
+.vscode/
+
+# === OS Specific ===
+.DS_Store
+Thumbs.db
+
+# === Build Tools ===
+target/          # For Maven
+build/           # For Gradle
+
+# === Sensitive Files ===
+db.properties    # If you store DB credentials here
+.env
