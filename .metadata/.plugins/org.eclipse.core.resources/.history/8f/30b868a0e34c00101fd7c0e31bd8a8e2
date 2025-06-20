@@ -1,9 +1,0 @@
-package com.hardik;
-
-public class InsertProg {
-
-	public static void main(String[] args) {
-		 
-		Class.forName("com.mysql.cj.jdbc.Drvier");
-	}
-}
