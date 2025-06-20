@@ -10,7 +10,7 @@ public class InsertProg {
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/advjava";
 	private static final String DB_USER = "hardik";
 	private static final String DB_PASSWORD = "Hardik@123";
-	private static final String INSERT = "INSERT INTO BOOKs VALUES(102 , 'Python' , 350.95)";
+	private static final String INSERT = "INSERT INTO BOOKs VALUES(104 , 'Tester' , 50.95)";
 
 	public static void main(String[] args) throws Exception {
 		// Step-1 load the driver class
