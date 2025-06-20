@@ -13,10 +13,10 @@ public class InsertProg {
 	private static final String INSERT = "INSERT INTO BOOKs VALUES(102 , 'Python' , 350.95)";
 
 	public static void main(String[] args) throws Exception {
-		// Step-1 load the driver class
+		// Step-1
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		// Step-2 create the connection with the help of DriverManager class
+		// Step-2
 		Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
 		// Step-3 create statement
@@ -25,11 +25,7 @@ public class InsertProg {
 		// step-4 execute query
 		int noOFRowAffected = stmt.executeUpdate(INSERT);
 
-		// step-5 count the no of rows affected
 		System.out.println("no of rows Affected is :: " + noOFRowAffected);
-
-		// step-6 close the connection
-		con.close();
 
 	}
 }
