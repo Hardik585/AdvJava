@@ -16,7 +16,7 @@ out/
 .classpath
 .settings/
 bin/
-.metadata
+*.metadata/
 
 # === VSCode ===
 .vscode/
