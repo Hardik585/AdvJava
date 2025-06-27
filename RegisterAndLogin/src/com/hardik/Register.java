@@ -1,6 +1,5 @@
 package com.hardik;
 
-import java.sql.ResultSet;
 import java.util.Scanner;
 
 public class Register {
