@@ -1,10 +1,11 @@
 package com.hardik;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 public class ProcWithOutInOut {
 
@@ -15,8 +16,8 @@ public class ProcWithOutInOut {
 
 	public static void main(String[] args) throws SQLException {
 		Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-		Statement stmt = con.createStatement();
-		ResultSet rs = stmt.executeQuery(PROC_CALL);
+		CallableStatement calStmt = con.prepareCall(PROC_CALL);
+		ResultSet rs = calStmt.executeQuery(PROC_CALL);
 		while (rs.next()) {
 			System.out.print("BOOK id is : " + rs.getInt(1));
 			System.out.print("  BOOK name is : " + rs.getString(2));
